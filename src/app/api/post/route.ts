@@ -2,9 +2,7 @@ import { NextResponse } from "next/server";
 import { comments } from "../db/db";
 
 const allowedOrigin =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:3000"
-    : "https://bespoke-bublanina-9e1d94.netlify.app";
+  "https://new-api-next-git-main-mahmoud974s-projects.vercel.app/api/conv";
 
 export const POST = async (req: Request) => {
   try {

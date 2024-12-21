@@ -62,7 +62,7 @@ export default function Page() {
   const { data: getComments } = useTemplate();
 
   const { mutate: postComment } = usePostTemplate();
-
+  console.log(postComment);
   const [respondIndex, setRespondIndex] = useState<number | null>(null);
   const [parentId, setParentId] = useState<number | null>(null);
   const [replyingTo, setReplyingTo] = useState<string>("");
