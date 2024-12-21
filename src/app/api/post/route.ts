@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { comments } from "../db/db";
 
-const allowedOrigin =
-  "https://new-api-next-git-main-mahmoud974s-projects.vercel.app/api/conv";
+const allowedOrigin = "https://new-api-next.vercel.app/api/conv";
 
 export const POST = async (req: Request) => {
   try {
